@@ -3,7 +3,7 @@ const paramsArray = [
         service: 'EC2', action: 'CPU', params: {
             Namespace: 'AWS/EC2',
             MetricName: 'CPUUtilization',
-            Interval: '10mins',
+            Interval: 600000,
             Period: 30,
             Statistics: ['Maximum'],
             Name: 'aws_EC2_CPU_gauge',
@@ -20,7 +20,7 @@ const paramsArray = [
         service: 'EC2', action: 'CPUAverage', params: {
             Namespace: 'AWS/EC2',
             MetricName: 'CPUUtilization',
-            Interval: '5mins',
+            Interval: 300000,
             Period: 30,
             Statistics: ['Maximum'],
             Name: 'aws_EC2_CPUAverage_gauge',
@@ -37,7 +37,7 @@ const paramsArray = [
         service: 'EC2', action: 'NetworkOut', params: {
             Namespace: 'AWS/EC2',
             MetricName: 'NetworkOut',
-            Interval: '10mins',
+            Interval: 600000,
             Period: 30,
             Statistics: ['Average'],
             Name: 'aws_EC2_NetworkOut_gauge',
@@ -54,7 +54,7 @@ const paramsArray = [
         service: 'EC2', action: 'NetworkIn', params: {
             Namespace: 'AWS/EC2',
             MetricName: 'NetworkIn',
-            Interval: '5mins',
+            Interval: 300000,
             Period: 30,
             Statistics: ['Average'],
             Name: 'aws_EC2_NetworkIn_gauge',
@@ -71,7 +71,7 @@ const paramsArray = [
         service: 'EC2', action: 'CPUCreditUsage', params: {
             Namespace: 'AWS/EC2',
             MetricName: 'CPUCreditUsage',
-            Interval: '5mins',
+            Interval: 900000,
             Period: 30,
             Statistics: ['Average'],
             Name: 'aws_EC2_CPUCreditUsage_gauge',
@@ -90,7 +90,7 @@ const paramsArray = [
         params: {
             Namespace: 'AWS/EC2',
             MetricName: 'CPUUtilization',
-            Interval: '5mins',
+            Interval: 300000,
             Period: 30,
             Statistics: ['Average'],
             Name: 'aws_EC2_CPUUtilization_gauge',
@@ -121,7 +121,7 @@ const paramsArray = [
         params: {
             Namespace: 'AWS/Lambda',
             MetricName: 'Invocations',
-            Interval: '5mins',
+            Interval: 300000,
             Period: 30,
             Statistics: ['Sum'],
             Name: 'aws_Lambda_invocations_gauge',
@@ -144,7 +144,7 @@ const paramsArray = [
         params: {
             Namespace: 'AWS/Kinesis',
             MetricName: 'IncomingBytes',
-            Interval: '5mins',
+            Interval: 300000,
             Period: 30,
             Statistics: ['Sum'],
             Name: 'aws_kinesis_incomingBytes_gauge',

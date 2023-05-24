@@ -1,5 +1,0 @@
-{
-  "Database" : "mongodb://localhost:27017/hotelmanagement",
-  "Port" : "4001",
-  "Region" : "eu-north-1"
-}

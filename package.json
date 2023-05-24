@@ -11,10 +11,11 @@
   "license": "ISC",
   "dependencies": {
     "@aws-sdk/client-cloudwatch": "^3.332.0",
-    "config": "^3.3.9",
+    "convict": "^6.2.4",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^7.1.1",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "prom-client": "^14.2.0"
   }
 }

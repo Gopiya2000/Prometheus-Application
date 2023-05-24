@@ -1,11 +1,7 @@
 let fiveMinutesInMilliseconds = 300000;
-let tenMinutesInMilliseconds = 600000;
-let fiveMinutes = '5mins';
-let tenMinutes = '10mins';
+let oneMinuteInMilliseconds = 60000;
 
 module.exports = {
     fiveMinutesInMilliseconds,
-    tenMinutesInMilliseconds,
-    fiveMinutes,
-    tenMinutes,
+    oneMinuteInMilliseconds
 }
